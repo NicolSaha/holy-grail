@@ -3,28 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="floats.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="grid.css" media="screen" />
     <title>CSS Layout - Holy Grail</title>
   </head>
 
-  <body>
+  <body class="grid">
     <header>
-      <h1>Holy Grail</h1>
+      <h1>HOLY GRAIL</h1>
     </header>
 
-    <nav>
+    <nav class="sidebar-left">
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <br />
-        <li><a href="#">About</a></li>
-        <br />
-        <li><a href="#">Portfolio</a></li>
-        <br />
-        <li><a href="#">Contact</a></li>
+        <li><a href="#">Overview</a></li>
+        <li><a href="#">Float</a></li>
+        <li><a href="#">Flexbox</a></li>
+        <li><a href="#">Grid</a></li>
       </ul>
     </nav>
 
     <main>
+      <h2>About me ...</h2>
       I am enlightened to see you are interested in booking a photoshoot with
       me! 📷 A little bit about myself… My name is Nicole, I am raised in the
       Netherlands, and an avid and passionate explorer of Mother Earth 🌎. I
@@ -36,13 +34,30 @@
       picture can say more than a thousand words! 💎
     </main>
 
-    <aside>
-      <img src="camera.svg" alt="Camera Picture" />
+    <aside class="sidebar-right">
+      <br />
+      <div class="shoutout1">
+        <br />
+        <img src="camera.svg" alt="Camera Picture" />
+        <p>Book a Shoot!</p>
+      </div>
+      <br />
+      <div class="shoutout2">
+        <br />
+        <img src="insta.png" alt="Instagram" />
+        <p>Follow Me!</p>
+      </div>
+      <br />
+      <div class="shoutout3">
+        <br />
+        <img src="picture.svg" alt="Portfolio" />
+        <p>Portfolio</p>
+      </div>
     </aside>
 
     <footer>
-      <a href="https://github.com/NicolSaha/holy-grail">Open-Source Code</a> by
-      👩🏻‍💻 Nicol Saha
+      <a href="https://github.com/NicolSaha/holy-grail">Open-Source Code</a>
+      by 👩🏻‍💻 Nicol Saha
     </footer>
   </body>
 </html>
