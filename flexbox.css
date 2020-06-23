@@ -9,16 +9,8 @@
     height: 430px;
   }
 
-  .shoutout2 {
-    display: none;
-  }
-
-  .shoutout3 {
-    display: none;
-  }
-
   img {
-    width: 15%;
+    width: 20%;
   }
 
   .container,
@@ -34,6 +26,32 @@
 
   #sidebar-left {
     order: -1;
+  }
+
+  /* || Slider */
+  .slider {
+    width: 300px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+  .slide {
+    width: 300px;
+    flex-shrink: 0;
+    height: 100%;
+  }
+
+  .slides {
+    scroll-behavior: smooth;
+  }
+
+  @supports (scroll-snap-type) {
+    .slider > a {
+      display: none;
+    }
   }
 }
 
